@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Autentia Training App</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Añadir Curso</string>
+    <string name="list_header">Lista de Cursos</string>
+    <string name="title_activity_add_course">Añadir Curso</string>
 </resources>

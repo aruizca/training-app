@@ -1,5 +1,6 @@
 package autentia.com.autentiatrainingapp;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -135,7 +136,9 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.add_course_menu_item) {
+            Intent intent = new Intent(this, AddCourseActivity.class);
+            this.startActivity(intent);
             return true;
         }
 
