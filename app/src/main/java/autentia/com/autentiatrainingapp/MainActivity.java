@@ -38,11 +38,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        JsonArrayRequest jsonArrayRequest = loadAndSetupCoursesList();
-        VolleyApplication.getInstance().getRequestQueue().add(jsonArrayRequest);
+        retieveAndShowExternalData();
 
+        registerUIComponents();
+
+        registerListeners();
+    }
+
+    private void registerUIComponents() {
         listView = (ListView) findViewById(R.id.listView);
         headerTextView = (TextView)findViewById(R.id.textView);
+    }
+
+    private void retieveAndShowExternalData() {
+        JsonArrayRequest jsonArrayRequest = loadAndSetupCoursesList();
+        VolleyApplication.getInstance().getRequestQueue().add(jsonArrayRequest);
+    }
+
+    private void registerListeners() {
         headerTextView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

@@ -83,13 +83,13 @@ public class Course implements Serializable {
         String resolvedLevel = "";
         switch (level) {
             case 1:
-                resolvedLevel = "básico";
+                resolvedLevel = "Básico";
                 break;
             case 2:
-                resolvedLevel = "intermedio";
+                resolvedLevel = "Intermedio";
                 break;
             case 3:
-                resolvedLevel = "avanzado";
+                resolvedLevel = "Avanzado";
                 break;
         }
         return  resolvedLevel;

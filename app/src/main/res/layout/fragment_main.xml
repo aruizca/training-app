@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Course List"
+        android:text="Lista de Cursos"
         android:id="@+id/textView"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
