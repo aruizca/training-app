@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
     @NonNull
     private JsonArrayRequest loadAndSetupCoursesList() {
-        return new JsonArrayRequest("http://autentia-training-service.herokuapp.com/training-service/api/course/list",
+        return new JsonArrayRequest(Constants.ServiceURL.COURSE_LIST,
                     new Response.Listener<JSONArray>() {
 
                         @Override

@@ -26,6 +26,14 @@ public class Course implements Serializable {
         this.level = level;
     }
 
+    public Course(Boolean active, String teacher, String title, String level, String hours) {
+        this.active = active;
+        this.teacher = teacher;
+        this.title = title;
+        this.level = Integer.parseInt(level) + 1;
+        this.hours = Integer.parseInt(hours);
+    }
+
     public Long getId() {
         return id;
     }

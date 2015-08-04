@@ -4,4 +4,27 @@
     <string name="action_settings">Añadir Curso</string>
     <string name="list_header">Lista de Cursos</string>
     <string name="title_activity_add_course">Añadir Curso</string>
+    <string name="add_course_legend">Detalles del curso</string>
+    <string name="add_course_field_active">Activo</string>
+    <string name="add_course_field_teacher">Profesor</string>
+    <string name="add_course_field_title">Título</string>
+    <string name="add_course_field_level">Nivel</string>
+    <string name="add_course_field_hours">Horas</string>
+    <string name="add_course_button_save">Añadir</string>
+    <string name="add_course_msg_success">Tu curso se ha añadido correctamente</string>
+    <string name="add_course_msg_error">Ha occurrido un error inesperado al añadir tu curso</string>
+
+    <string name="msg_validation_mandatory">es obligatorio</string>
+
+    <string-array name="teacher_array">
+        <item>Roberto Canales</item>
+        <item>Alberto Moratilla</item>
+        <item>Angel Ruiz</item>
+    </string-array>
+
+    <string-array name="level_array">
+        <item>Básico</item>
+        <item>Intermedio</item>
+        <item>Avanzado</item>
+    </string-array>
 </resources>
