@@ -1,8 +1,5 @@
 package autentia.com.autentiatrainingapp;
 
-/**
- * Created by rui008 on 4/08/15.
- */
 public class Constants {
     public static final String TRAINING_SERVICE_BASE_API_URL = "http://autentia-training-service.herokuapp.com/training-service/api";
     public class ServiceURL {
