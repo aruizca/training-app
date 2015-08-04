@@ -11,7 +11,9 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Response;
+import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 
@@ -53,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void retieveAndShowExternalData() {
         JsonArrayRequest jsonArrayRequest = loadAndSetupCoursesList();
+        // The web service layer is hosted in heroku free dyno which goes to sleep. Taht is why I need to increase the timeout
+        int socketTimeout = 20000;
+        RetryPolicy policy = new DefaultRetryPolicy(socketTimeout, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT);
+        jsonArrayRequest.setRetryPolicy(policy);
         VolleyApplication.getInstance().getRequestQueue().add(jsonArrayRequest);
     }
 
